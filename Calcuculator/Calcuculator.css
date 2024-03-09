@@ -1,0 +1,271 @@
+.biarTengah{
+    padding: 10px 10px 10px 10px;
+    user-select: none;
+}
+
+body{
+    background-color: #1c2733;
+    font-family: Poppins;
+    /* overflow-y: hidden; */
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-family: Poppins Light;
+    font-size: 3vw;
+    margin: 10px 0px -10px 0px;
+    line-height: 40px;
+}
+
+.calcuculator {
+    width: 25%;
+    height: auto;
+    background-color: #263545;
+    margin: 2% 37.5%;
+    border-radius: 1vw;
+    transition: 1s;
+    text-align: right;
+
+}
+
+@media(max-width: 768px){
+    .calcuculator{
+        width: 70%;
+        margin: 15% 15%;
+        transition: 1s;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .neon-purple b{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px){
+    .calcuculator{
+        width: 80%;
+        margin: 10% 10%;
+        transition: 1s;
+        padding: 5px 10px;
+        margin: 8px 8px -5px 8px;
+    }
+}
+
+.display {
+    padding: 5px 10px;
+    text-align: right !important;
+    font-family: Poppins;
+    font-size: xx-large;
+    color: white;
+    background-color: #1c2733;
+    width: 94%;
+    resize: none;
+    border: none;
+    height: 100px;
+    max-width: 90%;
+    border-radius: 10px;
+    margin: 8px 8px -5px 8px;
+    line-height: 30px;
+}
+
+.button{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    border-radius: 10px;
+    height: 300px;
+    padding: 15px;
+}
+
+
+button{
+    cursor: pointer;
+    border-radius: 10px;
+    border-width: 1px;
+    font-size: 2vw;
+    transition: 0.1s;
+    background-color: rgb(24, 24, 24);
+}
+
+button:active{
+    font-size: 1.68vw;
+    transition: 0.1s;
+    border-style: outset;
+}
+
+.operatorButt{
+    color: #f69906;
+}
+
+.numButt, #posnegButt{
+    color: white;
+}
+
+#penghapus, #persButt, #kalButt, #kurButt, #tamButt, #bagButt{
+    color: limegreen;
+}
+
+#samButt{
+    background-color: limegreen;
+    color: black;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.5vw;
+    background: #263545;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.neon-blue {
+    margin: 0 auto;
+    text-align: center;
+    color: #ebffff;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.3), 0 0px 15px #fff, 0 0 10px #38eeff, 0 0 50px #38eeff;
+  }
+
+#fade {
+    opacity: 0.8;
+    color: #ebffff;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.3), 0 0px 15px #fff, 0 0 10px #38eeff, 0 0 40px #38eeff;
+    -webkit-animation: fade 3s infinite alternate;
+    -moz-animation: fade 3s infinite alternate;
+    -o-animation: fade 3s infinite alternate;
+    animation: fade 3s infinite alternate;
+}
+
+#fade2 {
+    opacity: 0.8;
+    color: #ebffff;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.3), 0 0px 15px #fff, 0 0 10px #38eeff, 0 0 40px #38eeff;
+    -webkit-animation: fade 1s infinite alternate;
+    -moz-animation: fade 1s infinite alternate;
+    -o-animation: fade 1s infinite alternate;
+    animation: fade 10s infinite alternate;
+}
+
+  @-moz-keyframes fade {
+    40% {
+      opacity: 0.8;
+    }
+    42% {
+      opacity: 0.1;
+    }
+    43% {
+      opacity: 0.8;
+    }
+    45% {
+      opacity: 0.1;
+    }
+    46% {
+      opacity: 0.8;
+    }
+  }
+  @-webkit-keyframes fade {
+    40% {
+      opacity: 0.8;
+    }
+    42% {
+      opacity: 0.1;
+    }
+    43% {
+      opacity: 0.8;
+    }
+    45% {
+      opacity: 0.1;
+    }
+    46% {
+      opacity: 0.8;
+    }
+  }
+  @-o-keyframes fade {
+    40% {
+      opacity: 0.8;
+    }
+    42% {
+      opacity: 0.1;
+    }
+    43% {
+      opacity: 0.8;
+    }
+    45% {
+      opacity: 0.1;
+    }
+    46% {
+      opacity: 0.8;
+    }
+  }
+  @keyframes fade {
+    40% {
+      opacity: 0.8;
+    }
+    42% {
+      opacity: 0.1;
+    }
+    43% {
+      opacity: 0.8;
+    }
+    45% {
+      opacity: 0.1;
+    }
+    46% {
+      opacity: 0.8;
+    }
+  }
+
+.neon-purple b{
+    font-family: Poppins Light;
+    color: #fee;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+    font-family: Poppins Light;
+    font-size: 3vw;
+}
+.neon-purple b span{
+    animation: blink linear infinite 2s;
+}
+.neon-purple b span:nth-of-type(2){
+    animation: blink linear infinite 3s;
+}
+@keyframes blink {
+    78% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+    79%{
+       color: #333;
+    }
+    80% {
+      
+      text-shadow: none;
+    }
+    81% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+    82% {
+      color: #333;
+      text-shadow: none;
+    }
+    83% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+    92% {
+      color: #333;
+      text-shadow: none;
+    }
+    92.5% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+}

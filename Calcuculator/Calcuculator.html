@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana | Raival</title>
+
+    <link rel="website icon" type="jpg" href="https://downloadr2.apkmirror.com/wp-content/uploads/2021/12/62/61a882f2890c1.png">
+
+    <link rel="stylesheet" href="Calcuculator.css">
+
+    <script src="Calcuculator.js"></script>
+</head>
+<body>
+    <div class="biarTengah">
+        <h1 id="title" class="neonblue">Kal<span id="fade">kulator</span><span id="fade2">&#128513;</span>
+            <div id="blink2" class="neon-purple">
+                <b><span>S</span><span>eder</span><span>hana</span></b>
+            </div>
+        </h1>
+        <div class="calcuculator">
+            <div>
+                <textarea id="display" class="display">0</textarea>
+            </div>
+            <div class="button">
+                <button id="cButt" class="operatorButt" onclick="CD()">C</button>
+                <button value="DEL" id="penghapus" class="operatorButt" onclick="penghapus()">DEL</button>
+                <button id="persButt" class="operatorButt" onclick="persenan()">%</button>
+                <button id="bagButt" class="operatorButt" onclick="operatorBro('/')">/</button>
+
+                <button class="numButt" onclick="angkaAjah('7')">7</button>
+                <button class="numButt" onclick="angkaAjah('8')">8</button>
+                <button class="numButt" onclick="angkaAjah('9')">9</button>
+                <button id="kalButt" class="operatorButt" onclick="operatorBro('*')">x</button>
+
+                <button class="numButt" onclick="angkaAjah('4')">4</button>
+                <button class="numButt" onclick="angkaAjah('5')">5</button>
+                <button class="numButt" onclick="angkaAjah('6')">6</button>
+                <button id="kurButt" class="operatorButt" onclick="operatorBro('-')">-</button>
+
+                <button class="numButt" onclick="angkaAjah('1')">1</button>
+                <button class="numButt" onclick="angkaAjah('2')">2</button>
+                <button class="numButt" onclick="angkaAjah('3')">3</button>
+                <button id="tamButt" class="operatorButt" onclick="operatorBro('+')">+</button>
+
+                <button class="numButt" onclick="operatorBro('.')">.</button>
+                <button class="numButt" onclick="angkaAjah('0')">0</button>
+                <button id="posnegButt" class="posNeg" onclick="posNeg()">+/-</button>
+                <button id="samButt" class="samaDengan" onclick="gasHitung()">=</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <span>Raival Ganteng</span>
+    </footer>
+</body>
+</html>

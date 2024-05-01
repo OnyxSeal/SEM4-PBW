@@ -1,0 +1,3 @@
+Nama databasenya tetep begalsepeda, isinya ada 4 table. 1 nya gajadi, ribet ah cape ngejar dl.
+
+- val
